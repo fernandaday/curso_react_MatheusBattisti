@@ -1,0 +1,11 @@
+.my_h2 {
+  color: #ddd;
+  background-color: #666;
+  border-top: 5px solid #000;
+}
+
+.my_p {
+  color: #ddd;
+  background-color: goldenrod;
+  padding: 5px;
+}
