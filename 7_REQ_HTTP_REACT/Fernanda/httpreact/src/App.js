@@ -2,14 +2,14 @@ import './App.css';
 
 import { useState } from 'react'
 
-import { useFech } from './hooks/useFech'
+import { useFetch } from './hooks/useFetch'
 
 const url = 'http://localhost:3000/products'
 
 function App() {
   // const [products, setProducts] = useState([])
 
-  const { data: items, httpConfig, loading, error } = useFech(url)
+  const { data: items, httpConfig, loading, error } = useFetch(url)
   
   const [name, setName] = useState("")
   const [price, setPrice] = useState("")
