@@ -3,12 +3,12 @@ import styles from "./EditPost.module.css";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useAuthValue } from "../../contexts/AuthContext";
-import { useFetchDocument } from "../../hooks/useFetchDocument";
+import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 import { useUpdateDocument } from "../../hooks/useUpdateDocument";
 
 const EditPost = () => {
   const { id } = useParams();
-  const { document: post } = useFetchDocument("posts", id);
+  const { document: post } = useFetchDocuments("posts", id);
 
   console.log(post);
 
